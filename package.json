@@ -5,8 +5,8 @@
   "description": "Katas",
   "repository": "https://github.com/cesalberca/katas",
   "scripts": {
-    "test": "vitest --watch=false",
-    "test:watch": "vitest --watch=true",
+    "test": "NODE_OPTIONS= vitest --watch=false",
+    "test:watch": "NODE_OPTIONS= vitest --watch=true",
     "format": "prettier --write --ignore-path .gitignore .",
     "toc": "doctoc README.md --github --title \"**Table of Contents**\"",
     "prepare": "husky install"
